@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --gold: #d4af37;
+    --gold-light: #f3e5ab;
+    --gold-dark: #996515;
+    --lapis: #1b3f75;
+    --lapis-dark: #0f2347;
+    --terracotta: #c85a32;
+    --basalt: #16181e;
+    --papyrus: #f5eedb;
+    --sandstone: #dfd2b5;
+  }
+
+  body {
+    font-family: 'Cairo', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #0c0d12;
+    color: #e6dfd1;
+    overflow-x: hidden;
+  }
+
+  /* Ancient Egyptian Hieroglyphic font support */
+  .hieroglyph-font {
+    font-family: "Noto Sans Egyptian Hieroglyphs", "Segoe UI Historic", sans-serif;
+  }
+
+  .amiri-font {
+    font-family: 'Amiri', serif;
+  }
+
+  .cinzel-font {
+    font-family: 'Cinzel', serif;
+  }
+}
+
+/* Custom scrollbar matching Egyptian basalt and gold */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1118;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2c38;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Papyrus & Ancient Stone Patterns */
+.bg-papyrus-pattern {
+  background-color: #12141c;
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.04) 0%, transparent 70%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 100% 100%, 32px 32px, 32px 32px;
+}
+
+.serekh-border {
+  border: 2px solid #d4af37;
+  position: relative;
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #ffd700 0%, #d4af37 50%, #aa7c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lapis-gradient-bg {
+  background: linear-gradient(145deg, #182848 0%, #0d1629 100%);
+}

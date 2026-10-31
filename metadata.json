@@ -1,0 +1,6 @@
+{
+  "name": "بوابة مصر العتيقة | Ancient Egypt Explorer",
+  "description": "موسوعة وتطبيق تفاعلي لاستكشاف تاريخ مصر العتيق، توحيد القطرين، ملوك الأسرتين الأولى والثانية، فك الهيروغليفية، صلاية نعرمر، والكاتب الملكي الذكي.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
